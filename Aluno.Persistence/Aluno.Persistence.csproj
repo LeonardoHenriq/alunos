@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AlunoPersist.cs~RF43b3285.TMP" />
     <None Remove="Contratos\INotas.cs~RF3dd7eda.TMP" />
   </ItemGroup>
 
