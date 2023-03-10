@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Contratos\INotas.cs~RF3dd7eda.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aluno.Domain\Aluno.Domain.csproj" />
   </ItemGroup>
 
 </Project>

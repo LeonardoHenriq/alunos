@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 
-namespace Sistema_de_Jornadas.util
+namespace Aluno.Persistence.Util
 {
     public class Connection
     {
+        private static readonly string _connectionString = @"Provider=SQLOLEDB.1;Persist Security Info=False;User ID=sa;Initial Catalog=PRINT_MANAGER;Data Source=DESKTOP-QB9VO73\SQL2014";
+
         private int timeout = 3000;
         public int Timeout { get { return timeout; } set { timeout = value; } }
 
@@ -56,7 +55,7 @@ namespace Sistema_de_Jornadas.util
             string connectionString = string.Empty;
             try
             {
-                connectionString = ConfigurationManager.ConnectionStrings["JORNADAS"].ToString();
+                connectionString = _connectionString;
             }
             catch { }
             return connectionString;
